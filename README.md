@@ -2,7 +2,7 @@
 
 Read this in other languages: [Japanese](./README_ja.md)
 
-![logo](./img/README01.png)
+![logo](./img/logo.png)
 
 Easy to assign an attribute on QGIS.
 
