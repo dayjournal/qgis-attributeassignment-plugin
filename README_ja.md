@@ -1,10 +1,10 @@
 # Attribute Assignment Plugin
 
-Read this in other languages: [Japanese](./README_ja.md)
+他の言語で読む: [英語](./README.md)
 
-![logo](./img/README01.png)
+![logo](./img/logo.png)
 
-Easy to assign an attribute on QGIS.
+QGISで簡単に属性付与
 
 ## QGIS Python Plugins Repository
 
@@ -13,37 +13,37 @@ Easy to assign an attribute on QGIS.
 ## blog
 
 
-## Usage
+## 利用方法
 
 ![menu](./img/menu.gif)
 
-1. Click "Attribute Assignment".
-2. Set "Layer", "Field", and "Value" on the dialog.
-3. Click a feature and update the attribute.
+1. Attribute Assignmentボタンをクリック
+2. ダイアログで「対象レイヤ」「対象フィールド」「値」を設定
+3. 対象地物をクリックで属性更新
 
-## Development
+## 開発
 
-### Requirements
+### 必要なツール
 
 - [uv](https://docs.astral.sh/uv/)
 - QGIS 3.x
 
-### Setup
+### セットアップ
 
 ```bash
-# Install dependencies
+# 依存関係のインストール
 uv sync
 
-# Lint
+# リント
 uv run ruff check .
 
-# Format
+# フォーマット
 uv run ruff format .
 ```
 
-### Local Development
+### ローカル開発
 
-Create a symbolic link to the QGIS plugins directory:
+QGISのプラグインディレクトリにシンボリックリンクを作成します：
 
 **macOS:**
 ```bash
@@ -60,9 +60,9 @@ mklink /D "%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\attribute_assign
 ln -s /path/to/attribute_assignment ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/attribute_assignment
 ```
 
-After editing the code, reload the plugin in QGIS to see the changes.
+コードを編集した後、QGISでプラグインをリロードすると変更が反映されます。
 
-## License
+## ライセンス
 
 Python modules are released under the GNU General Public License v2.0
 
