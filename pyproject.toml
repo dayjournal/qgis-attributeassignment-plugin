@@ -1,0 +1,39 @@
+[project]
+name = "qgis-attributeassignment-plugin"
+version = "3.0.0"
+description = "Easy to assign an attribute on QGIS"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Yasunori Kirimoto", email = "info@dayjournal.dev" }
+]
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pyqt5-stubs>=5.15.6.0",
+    "ruff>=0.14.0",
+]
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "F",
+    "E",
+    "W",
+    "B",
+    "N",
+    "UP",
+    "I",
+    "C90",
+    "C4",
+    "DTZ",
+    "PIE",
+    "PT",
+    "Q",
+    "SIM",
+    "RUF",
+]
+ignore = ["N802", "E501", "RUF001"]

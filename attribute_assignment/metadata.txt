@@ -1,0 +1,18 @@
+[general]
+name=Attribute Assignment
+description=Easy to assign an attribute on QGIS
+about=This plugin allows users to quickly assign attribute values to features by clicking on them in the map canvas.
+qgisMinimumVersion=3.0
+qgisMaximumVersion=3.99
+version=3.0.0
+
+# Plugin main icon
+icon=ui/icon.png
+
+author=Yasunori Kirimoto
+email=info@dayjournal.dev
+homepage=https://github.com/dayjournal/qgis-attributeassignment-plugin
+tracker=https://github.com/dayjournal/qgis-attributeassignment-plugin/issues
+repository=https://github.com/dayjournal/qgis-attributeassignment-plugin
+tags=attribute,vector,editing
+category=Vector
