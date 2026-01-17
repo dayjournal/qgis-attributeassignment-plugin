@@ -1,9 +1,9 @@
 import os
 from typing import Optional
 
-from PyQt5.QtWidgets import QDialog, QHBoxLayout
 from qgis.gui import QgsEditorWidgetWrapper, QgsGui
 from qgis.PyQt import uic
+from qgis.PyQt.QtWidgets import QDialog, QHBoxLayout
 
 
 class MainDialog(QDialog):
