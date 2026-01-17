@@ -1,6 +1,5 @@
 from typing import Any, Optional
 
-from PyQt5.QtWidgets import QMessageBox
 from qgis.core import (
     QgsCoordinateTransform,
     QgsFeatureRequest,
@@ -9,6 +8,7 @@ from qgis.core import (
     QgsRectangle,
 )
 from qgis.gui import QgsMapCanvas, QgsMapMouseEvent, QgsMapTool
+from qgis.PyQt.QtWidgets import QMessageBox
 
 from ..ui.main.main import MainDialog
 

@@ -1,9 +1,9 @@
 [project]
 name = "qgis-attributeassignment-plugin"
-version = "3.0.0"
+version = "4.0.0"
 description = "Easy to assign an attribute on QGIS"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     { name = "Yasunori Kirimoto", email = "info@dayjournal.dev" }
 ]
@@ -12,6 +12,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "pyqt5-stubs>=5.15.6.0",
+    "PyQt6-stubs>=6.4.0.0",
     "ruff>=0.14.0",
 ]
 
