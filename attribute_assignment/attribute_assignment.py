@@ -104,7 +104,10 @@ class AttributeAssignment:
         """
         Runs the plugin. Shows the dialog and activates the map click tool.
         """
-        self.dialog.setWindowFlags(Qt.WindowStaysOnTopHint)  # type: ignore
+        try:
+            self.dialog.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint)
+        except AttributeError:
+            self.dialog.setWindowFlags(Qt.WindowStaysOnTopHint)  # type: ignore
         self.dialog.show()
         current_layer = self.iface.layerTreeView().currentLayer()
         self.dialog.mMapLayerComboBox.setLayer(current_layer)

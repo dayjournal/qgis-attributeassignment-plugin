@@ -4,7 +4,7 @@ description=Easy to assign an attribute on QGIS
 about=This plugin allows users to quickly assign attribute values to features by clicking on them in the map canvas.
 qgisMinimumVersion=3.34
 qgisMaximumVersion=4.99
-version=4.0.0
+version=4.1.0
 supportsQt6=True
 
 # Plugin main icon
