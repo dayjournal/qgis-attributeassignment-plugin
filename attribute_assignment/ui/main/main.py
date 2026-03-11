@@ -5,6 +5,8 @@ from qgis.gui import QgsEditorWidgetWrapper, QgsGui
 from qgis.PyQt import uic
 from qgis.PyQt.QtWidgets import QDialog, QHBoxLayout
 
+from ..style_loader import load_style
+
 
 class MainDialog(QDialog):
     """
@@ -20,6 +22,7 @@ class MainDialog(QDialog):
         """
         super().__init__()
         self.ui = uic.loadUi(self.UI_PATH, self)
+        load_style(self)
         self.mMapLayerComboBox.layerChanged.connect(self.mFieldComboBox.setLayer)
         self.mFieldComboBox.fieldChanged.connect(self.on_field_changed)
         self.value_layout = QHBoxLayout()

@@ -1,0 +1,148 @@
+/* ============================================
+   Attribute Assignment
+   ============================================ */
+
+/* --- Dialog Base --- */
+QDialog {
+    background-color: #0E0B1A;
+    color: #F0ECF8;
+}
+
+/* --- Section Labels --- */
+QLabel#label_layer,
+QLabel#label_field,
+QLabel#label_value {
+    color: #8878B0;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 2px;
+}
+
+/* --- Combo Box (Layer / Field) --- */
+QComboBox {
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: #1A1528;
+    color: #F0ECF8;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border: 1px solid #9D4EDD;
+    background-color: #241D38;
+}
+
+QComboBox:focus {
+    border: 2px solid #C77DFF;
+    padding: 7px 11px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+    border-left: 1px solid #3D3060;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #241D38;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+    background-color: #1A1528;
+    selection-background-color: rgba(199, 125, 255, 0.15);
+    selection-color: #C77DFF;
+    padding: 4px;
+    outline: none;
+}
+
+/* --- Value Placeholder Area --- */
+QWidget#mValuePlaceholder {
+    min-height: 30px;
+}
+
+/* --- Dynamic Value Widgets (created by QgsEditorWidgetWrapper) --- */
+QWidget#mValuePlaceholder QLineEdit {
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+    padding: 6px 10px;
+    background-color: #1A1528;
+    color: #F0ECF8;
+    font-size: 13px;
+}
+
+QWidget#mValuePlaceholder QLineEdit:focus {
+    border: 2px solid #C77DFF;
+    padding: 5px 9px;
+}
+
+QWidget#mValuePlaceholder QComboBox {
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+    padding: 6px 10px;
+    background-color: #1A1528;
+    color: #F0ECF8;
+    font-size: 13px;
+}
+
+QWidget#mValuePlaceholder QComboBox:focus {
+    border: 2px solid #C77DFF;
+    padding: 5px 9px;
+}
+
+QWidget#mValuePlaceholder QSpinBox,
+QWidget#mValuePlaceholder QDoubleSpinBox {
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+    padding: 6px 10px;
+    background-color: #1A1528;
+    color: #F0ECF8;
+    font-size: 13px;
+}
+
+QWidget#mValuePlaceholder QSpinBox:focus,
+QWidget#mValuePlaceholder QDoubleSpinBox:focus {
+    border: 2px solid #C77DFF;
+    padding: 5px 9px;
+}
+
+QWidget#mValuePlaceholder QDateEdit,
+QWidget#mValuePlaceholder QTimeEdit,
+QWidget#mValuePlaceholder QDateTimeEdit {
+    border: 1px solid #3D3060;
+    border-radius: 12px;
+    padding: 6px 10px;
+    background-color: #1A1528;
+    color: #F0ECF8;
+    font-size: 13px;
+}
+
+QWidget#mValuePlaceholder QDateEdit:focus,
+QWidget#mValuePlaceholder QTimeEdit:focus,
+QWidget#mValuePlaceholder QDateTimeEdit:focus {
+    border: 2px solid #C77DFF;
+    padding: 5px 9px;
+}
+
+QWidget#mValuePlaceholder QCheckBox {
+    font-size: 13px;
+    color: #F0ECF8;
+    spacing: 10px;
+}
+
+QWidget#mValuePlaceholder QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3D3060;
+    border-radius: 4px;
+    background-color: #1A1528;
+}
+
+QWidget#mValuePlaceholder QCheckBox::indicator:checked {
+    background-color: #C77DFF;
+    border: 2px solid #C77DFF;
+}
