@@ -8,7 +8,7 @@ QGISで簡単に属性付与
 
 ## QGIS Python Plugins Repository
 
-[Attribute Assignment Plugin](https://plugins.qgis.org/plugins/attribute_assignment)  
+[Attribute Assignment Plugin](https://plugins.qgis.org/plugins/AttributeAssignment)  
 
 ## blog
 
@@ -26,7 +26,7 @@ QGISで簡単に属性付与
 ### 必要なツール
 
 - [uv](https://docs.astral.sh/uv/)
-- QGIS 3.x
+- QGIS 3.x , 4.x
 
 ### セットアップ
 
